@@ -1,5 +1,3 @@
-# CAMBIARE A JSON
-
 import socket
 import json
 
