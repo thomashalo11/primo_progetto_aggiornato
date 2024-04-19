@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'news',
     'prova_pratica_1',
     'corsheaders',
-    'products'
+    'products',
+    
 ]
 
 MIDDLEWARE = [
@@ -142,3 +143,9 @@ MEDIA_ROOT = 'uploads'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Redirect to home URL after login (Default redirects to /accounts/profile/)
+LOGIN_REDIRECT_URL = '/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# Password: Halowars
